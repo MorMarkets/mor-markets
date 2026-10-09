@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MOR | Live Solana Market Board</title>
+<meta name="description" content="MOR reads the confirmed Solana chain tip and every public listing it can find, live, with nothing typed in by hand.">
+<meta name="theme-color" content="#0b0b0a">
+<meta property="og:title" content="MOR | Live Solana Market Board">
+<meta property="og:description" content="Confirmed chain tip and public Solana listings, live, straight from the sources.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://usemor.markets/">
+<meta property="og:image" content="https://usemor.markets/logo-512.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/app-I5FJ7VFF.css">
+<script type="application/json" id="register">{"records":[{"id":"ca","label":"Contract address","state":"absent","value":null,"url":null},{"id":"x","label":"X","state":"stated","value":null,"url":"https://x.com/MorDotMarkets"},{"id":"github","label":"GitHub","state":"absent","value":null,"url":null},{"id":"domain","label":"Domain","state":"stated","value":null,"url":"https://usemor.markets"},{"id":"rpc","label":"Solana RPC","state":"stated","value":null,"url":"https://solana-rpc.publicnode.com"},{"id":"chain","label":"Chain","state":"stated","value":"solana","url":null}]}</script>
+<script type="module" src="/assets/app-AF5LZA63.js"></script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<div class="top">
+  <header class="wrap bar">
+    <a class="brand" href="#top" aria-label="MOR, back to top"><img src="/logo-72.png" width="36" height="36" alt=""><b>MOR</b></a>
+    <nav class="nav" aria-label="Sections"><a href="#pairs">Pairs</a><a href="#wiring">Feed</a><a href="#ca">Contract</a></nav>
+    <div class="tools">
+      <button class="ico menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <a class="ico" href="https://x.com/MorDotMarkets" target="_blank" rel="noopener noreferrer" aria-label="MOR on X, @MorDotMarkets"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+      <span class="ico" role="img" data-inert="true" aria-disabled="true" aria-label="GitHub, not published yet"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg></span>
+    </div>
+  </header>
+  <nav class="menu" id="menu" data-open="false" aria-label="Sections"><a href="#pairs">Pairs</a><a href="#wiring">Feed</a><a href="#ca">Contract</a></nav>
+  <section class="ca" id="ca" data-state="absent" aria-label="Contract address">
+  <div class="ca-in"><span class="ca-label">CA</span>
+    <button class="ca-btn" type="button" disabled aria-disabled="true" aria-label="Contract address not announced yet. This slot unlocks when one is published." title="Unlocks the moment an address is published">
+      <span class="ca-full">Not announced yet</span><span class="ca-act">Locked</span>
+    </button></div></section>
+</div>
+
+<main id="top">
+<div class="wrap">
+  <section class="hero">
+    <div>
+      <a class="pill rv" id="pill" data-health="warn" href="#wiring"><i class="dot"></i><span id="pill-text">Reaching Solana</span></a>
+      <h1 class="rv">Prices <em>bolted</em> onto the chain.</h1>
+      <p class="lede rv">MOR reads Solana directly and lines up every public listing it can find. No hand-typed figures, and no placeholders passing as data.</p>
+      <div class="cta rv"><a class="btn solid spot" href="#pairs">See live pairs</a><a class="btn spot" href="#wiring">Inspect the wiring</a></div>
+      <dl class="stats rv">
+        <div><dt>Confirmed height</dt><dd><span class="live" data-live="height" data-state="loading"><i class="sk"></i><span class="val"></span></span></dd></div>
+        <div><dt>Confirmed slot</dt><dd><span class="live" data-live="slot" data-state="loading"><i class="sk"></i><span class="val"></span></span></dd></div>
+        <div><dt>Pairs found</dt><dd><span class="live" data-live="pairs" data-state="loading"><i class="sk"></i><span class="val"></span></span></dd></div>
+      </dl>
+      <span class="err" data-err="chain" role="status"></span>
+    </div>
+    <div class="side">
+      <div class="stage rv" aria-hidden="true">
+        <div class="layer glow" data-depth="0.2"></div>
+        <div class="layer grid" data-depth="0.45"><svg viewBox="0 0 200 200"><polygon points="179.7,54.0 179.7,146.0 100.0,192.0 20.3,146.0 20.3,54.0 100.0,8.0"/><polygon points="164.1,63.0 164.1,137.0 100.0,174.0 35.9,137.0 35.9,63.0 100.0,26.0"/><polygon points="148.5,72.0 148.5,128.0 100.0,156.0 51.5,128.0 51.5,72.0 100.0,44.0"/><polygon points="132.9,81.0 132.9,119.0 100.0,138.0 67.1,119.0 67.1,81.0 100.0,62.0"/></svg></div>
+        <div class="layer nut" data-depth="0.9"><img src="/logo-560.png" alt="" width="280" height="280"></div>
+        <span class="tag">MOR / FIELD UNIT</span>
+      </div>
+      <div class="console rv spot" role="group" aria-label="Chain feed readout">
+        <header><span>mor@feed: ~/tip</span><span>batch · confirmed</span></header>
+        <div class="rows">
+          <div class="row"><span>node</span><span class="live" data-live="rpc" data-state="loading"><i class="sk"></i><span class="val"></span></span></div>
+          <div class="row"><span>level</span><span>confirmed</span></div>
+          <div class="row"><span>height</span><span class="live" data-live="height" data-state="loading"><i class="sk"></i><span class="val"></span></span></div>
+          <div class="row"><span>slot</span><span class="live" data-live="slot" data-state="loading"><i class="sk"></i><span class="val"></span></span></div>
+          <div class="row"><span>round trip</span><span class="live" data-live="rtt" data-state="loading"><i class="sk"></i><span class="val"></span></span></div>
+          <div class="row"><span>refreshed</span><span class="live" data-live="age" data-state="loading"><i class="sk"></i><span class="val"></span></span></div>
+        </div>
+        <footer><span>[ .. ] waiting on a fresh block</span><b aria-hidden="true"></b></footer>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="marquee rv" id="marquee" data-state="loading" aria-label="Tokens returned by the market search">
+  <div class="skel-row" aria-hidden="true"></div>
+  <div class="track-host"></div>
+  <p class="msg" role="status"></p>
+</div>
+
+<div class="wrap">
+  <section class="block" id="pairs">
+    <div class="tabs">
+      <div class="tablist" role="tablist" id="tabs" aria-label="Pair filter">
+        <button class="tab" role="tab" aria-selected="true" data-tab="all" title="Every Solana pair the search returned">Everything</button>
+        <button class="tab" role="tab" aria-selected="false" tabindex="-1" data-tab="up" title="Pairs that rose over the last day">Climbing</button>
+        <button class="tab" role="tab" aria-selected="false" tabindex="-1" data-tab="down" title="Pairs that fell over the last day">Sliding</button>
+      </div>
+      <p class="tab-hint">Solana pairs matching the word &ldquo;mor&rdquo;</p>
+    </div>
+    <div class="controls">
+      <div class="find">
+        <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="sr">Search pairs</span><input id="q" type="search" placeholder="Find by name, symbol or mint" autocomplete="off" spellcheck="false" maxlength="64"><kbd aria-hidden="true">/</kbd></label>
+        <span class="status" id="status-dot-wrap" data-health="warn" title="Market source status"><i class="dot"></i><span id="status-text">connecting</span></span>
+      </div>
+      <div class="opts">
+        <div class="seg" id="sort" role="group" aria-label="Sort by"><button type="button" data-sort="vol" aria-pressed="true">Volume</button><button type="button" data-sort="liq" aria-pressed="false">Depth</button><button type="button" data-sort="chg" aria-pressed="false">Move</button><button type="button" data-sort="new" aria-pressed="false">Newest</button></div>
+        <div class="dd"><button class="dd-btn" id="qdd-btn" type="button" aria-haspopup="listbox" aria-expanded="false"><span>Quote</span><span id="qdd-label">All quotes</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><div class="dd-list" id="qdd-list" role="listbox" hidden></div></div>
+        <div class="seg" id="depth" role="group" aria-label="Pool size"><button type="button" data-depth="all" aria-pressed="true">Any size</button><button type="button" data-depth="deep" aria-pressed="false">$10K+ pools</button></div>
+      </div>
+    </div>
+    <span class="err" data-err="dex" role="status"></span>
+    <div class="cards" id="cards" aria-live="polite"></div>
+    <div class="more" id="more" hidden><button class="btn spot" type="button">Show more pairs</button></div>
+    <p class="note">This list is a public search for the word &ldquo;mor&rdquo;, so it holds tokens that have no tie to this project. Appearing here is not an endorsement. MOR has not announced a contract address yet. The slot at the top stays locked until it does, so treat any address that reaches you some other way as unverified.</p>
+  </section>
+
+  <section class="block" id="wiring">
+    <h2 class="sect-title rv">Under the hood</h2>
+    <p class="sect-sub rv">Four moving parts, every one of them visible in your browser&rsquo;s network tab.</p>
+    <div class="tiles">
+      <article class="tile spot rv"><span class="n">01</span><h3>Chain tip</h3><p>One batched call to a public Solana node asks for the confirmed block height and slot. It repeats every two seconds. The counter estimates forward between answers, then lands on the node&rsquo;s own figure.</p></article>
+      <article class="tile spot rv"><span class="n">02</span><h3>Market scan</h3><p>A DexScreener search runs every thirty seconds. Only Solana pairs survive the filter, and each logo, price and volume figure is passed through untouched.</p></article>
+      <article class="tile spot rv"><span class="n">03</span><h3>Patient retries</h3><p>When a source stalls, the pause ahead of each retry doubles up to a ceiling. Tiles flip to a dash with a plain message rather than present stale numbers as fresh.</p></article>
+      <article class="tile spot rv"><span class="n">04</span><h3>Contract slot</h3><p>One address bar sits above everything. It is locked today and opens the moment an address is published.</p></article>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-in wrap">
+    <div><b>MOR</b> &nbsp;usemor.markets<br>Figures are informational and not financial advice.</div>
+    <div class="foot-links"><a href="https://x.com/MorDotMarkets" target="_blank" rel="noopener noreferrer">X @MorDotMarkets</a><span aria-disabled="true">GitHub, soon</span><a href="#top">Back to top</a></div>
+  </div>
+</footer>
+
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+</body>
+</html>

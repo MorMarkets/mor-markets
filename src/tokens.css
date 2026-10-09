@@ -1,0 +1,23 @@
+/*
+  The only file in the repo allowed to hold colour literals.
+  Provenance: k-means (k=6, 14 iterations, alpha>200 pixels) over brand/LOGO MOR PNG.png and
+  brand/LOGO MOR PNG...png. Each centroid was snapped to the nearest REAL pixel of its cluster;
+  the coordinate (x,y in the 2000x2000 source) is listed so the value can be re-read from the file.
+    --ink   LOGO MOR PNG.png   (1032,600)  outline black
+    --coal  LOGO MOR PNG.png   (1072,1048) deep shadow
+    --slate LOGO MOR PNG.png   (0,0)       logo plate background
+    --ash   LOGO MOR PNG.png   (1088,856)  thread grey
+    --sand  LOGO MOR PNG.png   (664,1096)  side-face tan
+    --bone  LOGO MOR PNG.png   (1152,656)  front-face stone
+    --chalk LOGO MOR PNG...png (936,648)   top-face highlight (transparent master)
+  No other hue exists in the artwork. Direction (up/down) is carried by arrows and signs, not by hue.
+*/
+:root {
+  --ink: #0b0b0a;
+  --coal: #1a1918;
+  --slate: #2a2a28;
+  --ash: #5a5956;
+  --sand: #b2a490;
+  --bone: #dad3c7;
+  --chalk: #e8e2d8;
+}

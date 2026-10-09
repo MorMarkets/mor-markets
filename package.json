@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "jpeg-js": "^0.4.4",
+    "pngjs": "^7.0.0"
+  },
+  "name": "mor-markets",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs",
+    "analyze": "node scripts/analyze-brand.mjs"
+  }
+}

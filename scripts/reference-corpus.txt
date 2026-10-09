@@ -1,0 +1,85 @@
+pqc.market
+Coins
+Launch
+Identity
+Wallet
+Vault
+Verify
+Docs
+GitHub
+Connect Wallet
+pqc.market
+·
+WOTS(w=16, SHA-256) + Merkle(h=8)
+Docs
+Verify
+Built on pump.fun
+Twitter
+GitHub
+Bunker mode: why hash-based keys matter now
+Launch coins that survive
+Q-day
+.
+Every coin is signed by a one-time, hash-based key derived from your wallet. Live on pump.fun, with provenance that outlives ECDSA.
+Launch a coin
+How it works
+signature
+2,404 B
+keys / identity
+256
+assumption
+SHA-256
+pqc@bunker: ~/verify
+wots-sha256 · w=16
+pqc@bunker
+:
+~
+$ wots verify --live
+>
+# sign
+σ[i] = H^d[i](sk[i])
+# verify
+pk[i] =? H^(15-d[i])(σ[i])
+# compress
+ℓ = H(pk[0] || … || pk[66])
+# climb
+root =? H(…H(ℓ || a[0])… || a[7])
+… 62 more chains
+msg
+--------------------------------
+leaf
+--------------------------------
+root 0/8
+--------------------------------
+[ .. ]
+signing message
+All coins
+Standard
+Quantum
+Every pqc.market launch
+/
+connecting
+Newest
+Market cap
+Volume
+Holders
+Pair
+All pairs
+All
+Graduated
+Menu
+Coin type
+Every pqc.market launch
+Post-quantum provenance, dev funds in a wallet
+Hash-based, dev funds locked in a quantum vault
+Search name, ticker or address
+Search coins
+Connecting to live feed
+Launch coins that survive Q-day.
+Every coin is backed by a one-time, hash-based key derived from your wallet. MORMarkets brings verifiable provenance and cryptographic integrity to every launch.
+Built on SOLANA
+Built beyond the hype.
+Great launches need more than attention. MOR.markets combines streamlined coin discovery with hash-based verification, bringing provenance into the spotlight.
+Code the proof. Build the future.
+Digital assets deserve stronger foundations. MOR.markets brings hash-based verification and structured provenance to the coin-launch process, helping build a more accountable Web3 ecosystem.
+Launch the Next Era of Quantum-Secure Tokens

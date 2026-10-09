@@ -1,0 +1,227 @@
+{
+  "LOGO MOR JPG.jpg.jpeg": {
+    "kind": "jpeg",
+    "bytes": 568740,
+    "ihdr": null,
+    "size": [
+      2000,
+      2000
+    ],
+    "alphaHist8": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4000000
+    ],
+    "transparentPx": 0,
+    "pureBlackTransparentPx": 0,
+    "kmeans": [
+      {
+        "hex": "#2a2a28",
+        "share": 0.8374,
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "hex": "#dbd2c7",
+        "share": 0.0687,
+        "at": [
+          808,
+          672
+        ]
+      },
+      {
+        "hex": "#b2a390",
+        "share": 0.0438,
+        "at": [
+          664,
+          1096
+        ]
+      },
+      {
+        "hex": "#0b0b0b",
+        "share": 0.0328,
+        "at": [
+          872,
+          608
+        ]
+      },
+      {
+        "hex": "#5b5956",
+        "share": 0.0144,
+        "at": [
+          984,
+          800
+        ]
+      },
+      {
+        "hex": "#1a1817",
+        "share": 0.0029,
+        "at": [
+          544,
+          832
+        ]
+      }
+    ]
+  },
+  "LOGO MOR PNG...png": {
+    "kind": "png",
+    "bytes": 1125063,
+    "ihdr": {
+      "width": 2000,
+      "height": 2000,
+      "bitDepth": 8,
+      "colourType": 6,
+      "interlace": 0
+    },
+    "size": [
+      2000,
+      2000
+    ],
+    "alphaHist8": [
+      3334284,
+      1212,
+      961,
+      901,
+      869,
+      1009,
+      1265,
+      659499
+    ],
+    "transparentPx": 3343841,
+    "pureBlackTransparentPx": 3331342,
+    "kmeans": [
+      {
+        "hex": "#e8e2d8",
+        "share": 0.2258,
+        "at": [
+          936,
+          648
+        ]
+      },
+      {
+        "hex": "#0c0c0b",
+        "share": 0.2196,
+        "at": [
+          896,
+          616
+        ]
+      },
+      {
+        "hex": "#aa9b86",
+        "share": 0.18,
+        "at": [
+          1456,
+          856
+        ]
+      },
+      {
+        "hex": "#cbc2b3",
+        "share": 0.1735,
+        "at": [
+          824,
+          1080
+        ]
+      },
+      {
+        "hex": "#c0b4a3",
+        "share": 0.1046,
+        "at": [
+          1136,
+          1312
+        ]
+      },
+      {
+        "hex": "#565452",
+        "share": 0.0966,
+        "at": [
+          1176,
+          816
+        ]
+      }
+    ]
+  },
+  "LOGO MOR PNG.png": {
+    "kind": "png",
+    "bytes": 1164195,
+    "ihdr": {
+      "width": 2000,
+      "height": 2000,
+      "bitDepth": 8,
+      "colourType": 6,
+      "interlace": 0
+    },
+    "size": [
+      2000,
+      2000
+    ],
+    "alphaHist8": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4000000
+    ],
+    "transparentPx": 0,
+    "pureBlackTransparentPx": 0,
+    "kmeans": [
+      {
+        "hex": "#2a2a28",
+        "share": 0.8371,
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "hex": "#dad3c7",
+        "share": 0.0682,
+        "at": [
+          1152,
+          656
+        ]
+      },
+      {
+        "hex": "#b2a490",
+        "share": 0.0444,
+        "at": [
+          664,
+          1096
+        ]
+      },
+      {
+        "hex": "#0b0b0a",
+        "share": 0.0329,
+        "at": [
+          1032,
+          600
+        ]
+      },
+      {
+        "hex": "#5a5956",
+        "share": 0.0146,
+        "at": [
+          1088,
+          856
+        ]
+      },
+      {
+        "hex": "#1a1918",
+        "share": 0.0029,
+        "at": [
+          1072,
+          1048
+        ]
+      }
+    ]
+  }
+}
